@@ -1,0 +1,387 @@
+<html>
+<head>
+<meta charset="utf-8" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Portfolio</title>
+<style>
+body{
+      background-color:#f6f5f5;
+     
+        background-repeat:no-repeat;
+      margin:0px;
+      padding:0px;
+
+}
+ul{
+   list-style:none;
+}
+a{
+  text-decoration:none;
+}
+section{
+        width:100%;
+        height:95vh;
+        background-image: url("bg.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        position:relative;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:60px;
+    background-color:#eeeeee;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    padding:0px 5%;
+}
+nav ul{
+       display:flex;
+}
+nav ul li a{
+             margin:30px;
+             font-family:myriad pro regular;
+             color:#505050;
+             font-size:20px;
+             font-weight:700;
+}
+.logo{
+       font-family: RoadTest;
+       color:#000000;
+       font-size:40px;
+}
+.active{
+        font-weight:bold;
+         color:#2d2a2a;
+}
+.image{
+      height:250px;
+      width:100%;
+    
+        position:absolute;
+       
+        transform:translateY(20%);
+       
+
+}
+      
+.text-container p:nth-child(1){
+          font-family: calibri;
+          font-weight: bold;
+          color:#6d6d6d;
+          font-size:22px;
+}
+.text-container p:nth-child(2){
+       font-family:calibri;
+       font-weight:bold;
+       letter-spacing:1px;
+       color:#1a1a1a;
+       font-size:30px;
+ }
+.text-container p:nth-child(3){
+        font-family:Futura;
+        color:403e3e;
+        font-size:25px;
+        
+}
+.text-container p{
+    
+    margin:0px 15px 25px;
+}
+.text-container{
+     position:absolute;
+     left:13%;
+     top:42%;
+     transform:translate(-13%,42%); 
+}
+.model{
+        height:560px;
+        position:absolute;
+        bottom:0px;
+        left:70%;
+        transform:translateX(-70%);
+}
+.about-container{
+     width:80%;
+     height:330px;
+     background-color:#FFFFFF;
+     border-radius:20px;
+     box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+     display: flex;
+     margin:-7% auto 20px auto;
+     position:relative;
+     justify-content: space-evenly;
+     align-items:center;
+}
+.about-container img{
+     height:250px;
+}
+.about-text{
+      width:550px;
+}  
+.about-text p:nth-child(1){
+      color:#403e3e;
+      font-family: myriad pro;
+      font-weight: bold;
+      font-size:23px;
+}
+.about-text p:nth-child(2){
+      color:#3e3d3d;
+      font-size:20px;
+      font-family:myriad pro;
+      font-weight:bold;
+ }
+.about-text p:nth-child(3){
+       color:#7e7d7d;
+       font-family:calibri;
+       font-size:20px;
+}
+.services{
+      height:600px;
+      background-color:#FFFFFF;
+      padding:2% 10% 0px 10%
+       
+}
+.services-text p:nth-child(1){
+      font-family: Impact;
+      color:#3e3d3d;
+      font-size:40px;
+         
+}
+.services-text{
+     width:500px;
+     margin:50px 0px;
+}
+.box-1,.box-2,.box-3{
+      width:400px;
+      height:430px;
+      background-repeat:no-repeat;
+      background-size:cover;
+      box-shadow:2px 2px 12px rgba(0,0,0,0.3);
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:column;
+      
+}
+.box-container{
+     display:flex;
+     justify-content:space-between;
+}
+.box-1{
+     background-image: url("services-1.png");
+}
+.box-2{
+     background-image:url("services-2.png");
+}
+.box-3{
+     background-image:url("servies-3.png");
+}
+.box-1 span,
+.box-2 span,
+.box-3 span{
+   width:30px;
+   height:40px;
+   border-radius:50%;
+   background-color:#FFFFFF;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   font-family:calibri;
+   font-weight:bold;
+}
+.box-1 p:nth-child(2){
+     color:#FFFFFF;
+     font-family:calibri;
+     font-size: 25px;
+}
+.box-1 ul{
+       font-family:calibri;
+       margin: 0px 0px 20px 0px;
+       color:#FFFFFF;
+       font-size:25px;
+}
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2){
+     color:#FFFFFF;
+     font-family:calibri;
+     font-size: 25px;
+}
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3){
+       font-family:calibri;
+       margin: 0px 0px 20px 0px;
+       color:#FFFFFF;
+       font-size:25px;
+}
+.box-2 ul{
+       font-family:calibri;
+       margin: 0px 0px 20px 0px;
+       color:#FFFFFF;
+       font-size:25px;
+}
+.box-3 ul{
+       font-family:calibri;
+       margin: 0px 0px 20px 0px;
+       color:#FFFFFF;
+       font-size:25px;
+}
+.contact-me{
+    width:100%;
+    height:180px;
+    background-image:url("project in your mind.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.contact-me button{
+    width:200px;
+    height:40px;
+    background-color:#FFFFFF;
+    outline:none;
+    border:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.contact-me a{
+          color:#FFFFFF;
+          font-size:30px;
+          font-weight:bold;
+ }
+footer{
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+.social media icons{
+  padding: 300px;
+  font-size: 150px;
+  height:300px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+footer p{
+    font-family: calibri;
+    font-size:40px;
+    font-weight:bold;
+    color:#191919;
+}
+    
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<section>
+<nav>
+<a href="#" class="logo">Portfolio</a>
+<ul>
+<li><a href="#" class="active">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Team</a></li>
+</ul>
+</nav>
+<img src="backgroundimg.png" class="image">
+
+<div class="text-container">
+<p>Hello,</p>
+<p> I am Anjali Rengade,</p>
+<p> pursuing B.Tech(2nd year) in <br> Visvesvaraya National Institute of Technology,Nagpur</p>
+</div>
+<img src="20200712_135831.jpg" class="model" alt="model">
+</section>
+<div class="about-container">
+<img src="20200713_132909.jpg">
+<div class="about-text">
+<p>About Me</p>
+<p>Programming Enthusiast, Web developer & Athlete</p>
+<p>Name:Anjali Rengade <br> Location:Pune, Maharashtra <br> Date of Birth: August 21,2001 <br> Contact: anjalirengade23@gmail.com </p>  
+</div>
+</div>
+<div class="services">
+<div class="services-text">
+<p>Know more about me!</p>
+</div>
+<div class="box-container">
+<div class="box-1">
+<span>1</span>
+<p class="heading">Skills</p>
+<ul><li>*Programming(C,C++ & Python)</li>
+<li>*Web Development<br>(HTML,CSS,PHP,<br>Javascript,NodeJS(basic))</li><li>*Marketing</li><li>*Athletics(Running)</li></ul>
+</div>
+<div class="box-2">
+<span>2</span>
+<p class="heading">Education</p>
+<p class="details"><ul><li>*Currently pursuing B.Tech in <br>Computer Science & Engineering
+<br>from Visvesvaraya National <br>Institute of Technology</p></li></ul>
+</div>
+<div class="box-3">
+<span>3</span>
+<p class="heading">Experience</p>
+<p> <ul><li><br>*Completed a 4 month internship <br>in Marketing for Unschool<br> 
+Community <br> </li><br><li>*Participated in All India <br>Inter-NIT Athletics<br> Tournament,
+2020</li></p></ul>
+
+</div>
+</div>
+</div>
+<div class="contact-me">
+
+<button>Contact Me</button>
+<a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Email:-
+anjalirengade23@gmail.com</a>
+</div>
+<footer>
+
+<div class="social media icons">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-youtube"></a>
+</div>
+<p> Thank You!</p>
+</footer>
+
+</body>
+</html>
